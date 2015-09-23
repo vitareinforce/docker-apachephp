@@ -6,3 +6,6 @@ RUN apt-get update && apt-get install -y wget apache2 php5 php5-mysql php5-pgsql
 RUN service apache2 start
 
 EXPOSE 80
+EXPOSE 443
+
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
