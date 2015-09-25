@@ -5,8 +5,6 @@ RUN apt-get update && apt-get install -y wget apache2 php5 php5-mysql php5-pgsql
 
 RUN pear install Net_Gearman-0.2.3 
 
-RUN service apache2 start
-
 EXPOSE 80
 EXPOSE 443
 
